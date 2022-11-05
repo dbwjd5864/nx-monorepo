@@ -5,6 +5,12 @@
       "subjectMaxLength": 200,
       "conventional": true,
       "symbol": true,
+      "scopes": [
+        "pages",
+        "components",
+        "reducer",
+        "all"
+      ],
       "skipQuestions": [
         "breaking",
         "issues"
@@ -74,6 +80,7 @@
       "questions": {
         "type": "해당 커밋의 종류를 골라주세요",
         "subject": "커밋 메세지를 작성해주세요",
+        "scope": "코드 영향 범위를 선택해주세요 (전역적으로 영향을 주는 커밋이면 'all')",
         "body": "[actionable] Github URL or [ringle-web] Issue URL (선택사항 - Enter로 스킵)"
       }
     }
