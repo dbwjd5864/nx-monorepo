@@ -5,12 +5,6 @@
       "subjectMaxLength": 200,
       "conventional": true,
       "symbol": true,
-      "scopes": [
-        "student",
-        "tutor",
-        "teens",
-        "all"
-      ],
       "skipQuestions": [
         "breaking",
         "issues"
@@ -29,22 +23,10 @@
           "name": "BUGFIX"
         },
         {
-          "emoji": "🚑️",
-          "code": ":ambulance:",
-          "description": "긴급한 핫픽스 수정",
-          "name": "HOTFIX"
-        },
-        {
           "emoji": "♻️",
           "code": ":recycle:",
           "description": "코드 리펙토링 (더 좋은 코드를 위한 수정 및 삭제)",
           "name": "REFACTOR"
-        },
-        {
-          "emoji": "📝",
-          "code": ":pencil:",
-          "description": "워딩 업데이트 및 추가",
-          "name": "WORDING"
         },
         {
           "emoji": "⚡️",
@@ -92,7 +74,6 @@
       "questions": {
         "type": "해당 커밋의 종류를 골라주세요",
         "subject": "커밋 메세지를 작성해주세요",
-        "scope": "코드 영향 범위를 선택해주세요 (전역적으로 영향을 주는 커밋이면 'all')",
         "body": "[actionable] Github URL or [ringle-web] Issue URL (선택사항 - Enter로 스킵)"
       }
     }
