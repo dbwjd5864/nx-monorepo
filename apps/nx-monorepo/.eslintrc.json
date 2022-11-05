@@ -3,9 +3,14 @@
     "plugin:@nrwl/nx/react-typescript",
     "next",
     "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
     "../../.eslintrc.json"
   ],
-  "ignorePatterns": ["!**/*", ".next/**/*"],
+  "plugins": ["react", "@typescript-eslint", "react-hooks", "prettier"],
+  "ignorePatterns": ["!**/*", ".next/**/*", "build/"],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
@@ -26,6 +31,9 @@
     "@next/next/no-html-link-for-pages": "off"
   },
   "env": {
-    "jest": true
+    "jest": true,
+    "browser": true,
+    "es2021": true,
+    "node": true
   }
 }

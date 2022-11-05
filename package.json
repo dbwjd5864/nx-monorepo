@@ -5,13 +5,19 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "prepare": "husky install"
   },
   "private": true,
   "dependencies": {
+    "@commitlint/cli": "^17.2.0",
+    "@commitlint/config-conventional": "^17.2.0",
     "@nrwl/next": "15.0.7",
     "autoprefixer": "^10.4.13",
+    "commitizen": "^4.2.5",
     "core-js": "^3.6.5",
+    "cz-conventional-changelog": "^3.3.0",
+    "lint-staged": "^13.0.3",
     "next": "13.0.0",
     "postcss": "^8.4.18",
     "react": "18.2.0",
@@ -47,6 +53,7 @@
     "eslint-plugin-jsx-a11y": "6.6.1",
     "eslint-plugin-react": "7.31.8",
     "eslint-plugin-react-hooks": "4.6.0",
+    "husky": "^8.0.0",
     "jest": "28.1.1",
     "jest-environment-jsdom": "28.1.1",
     "nx": "15.0.7",
