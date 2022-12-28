@@ -9,6 +9,7 @@
   },
   "private": true,
   "dependencies": {
+    "@next/bundle-analyzer": "^13.1.1",
     "@nrwl/next": "15.0.7",
     "core-js": "^3.6.5",
     "next": "13.0.0",
