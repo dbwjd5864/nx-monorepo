@@ -16,6 +16,9 @@ const nextConfig = {
     // See: https://github.com/gregberge/svgr
     svgr: false,
   },
-};
+  compiler: {
+    removeConsole: Boolean(!(process.env.CONF_IS_DEVELOPMENT || process.env.NODE_ENV == 'development')),
+  },
+}
 
 module.exports = withNx(withBundleAnalyzer(nextConfig));

@@ -1,0 +1,5 @@
+#!/bin/sh
+# when we run a 'git commit' command, we'll be presented with an interactive Commitizen session to guide us through writing a meaningful commit message.
+. "$(dirname "$0")/_/husky.sh"
+
+exec < /dev/tty && git cz --hook || true
